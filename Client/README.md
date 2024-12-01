@@ -1,7 +1,37 @@
-# beautique
+# Beautique
 
-## GIT
-1. Git流程請參考 LINE 群組筆記。
-2. 開發新功能時，從 `dev` 分支建立新分支並推送到遠端進行開發。
-3. 功能開發完成後，使用 `git -D` 刪除分支，保持專案整潔。
-4. `請勿 merge main 分支`。如已發生，請退回上個開發版本，或聯繫技術長，確保 main 分支穩定。
+## 前端資料夾導覽_按照功能分類
+
+1. components: 組件分為一般組件&頁面組件，shared為共用組件
+/components/  
+    /home/
+    /layout/
+    /post/
+        /common/
+            /post-card/
+               /index.js/
+               /index.module.scss/
+
+        /pages/
+            /post-wall/
+                /index.js/
+                /index.module.scss/
+    /shared/
+       /icon/
+2. pages 路由
+/pages/ 
+    _app.js
+    _document.js
+    /post/
+        /[postId]
+        /index
+3. public 靜態資源
+/public/ 
+    /user/
+    /post/
+        post-banner.png
+4. styles 全域樣式
+/styles
+    global.scss
+    _variant.scss
+
