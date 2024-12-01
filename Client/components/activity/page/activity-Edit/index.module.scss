@@ -1,0 +1,101 @@
+@import '@/styles/_variant.scss';
+
+.header {
+  background-color: #626553;
+  height: 72px;
+  color: $gray-100;
+}
+.main {
+  padding: 70px 0px;
+  padding-left: 120px;
+  // width: 110%;
+  margin: auto;
+  .section1 {
+    padding-inline: 80px;
+    padding-block: 50px;
+  }
+  .section02 {
+    padding-inline: 80px;
+    padding-top: 50px;
+    .uploadMainInfo {
+      .subtitle {
+        padding-inline: 30px;
+        padding-block: 5px;
+
+        h4 {
+          color: $green-700;
+        }
+      }
+      .inputArea {
+        margin-top: 30px;
+        padding-inline: 30px;
+        .inputstyle {
+          span {
+            color: $green-500;
+            font-size: 14px;
+          }
+          input {
+            width: 100%;
+            height: 48px;
+            border-radius: 5px;
+            border: 1.5px solid $gray-200;
+            padding-inline: 15px;
+          }
+          input:focus {
+            outline: none;
+            border: 2px solid $green-500;
+          }
+          input::placeholder {
+            color: #cbcbcb;
+          }
+          .selfD {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .workshopDetail {
+      margin-top: 30px;
+      .label {
+        font-size: 16px;
+        span {
+          color: $green-500;
+          font-size: 14px;
+        }
+      }
+      border-radius: 5px;
+    }
+    .detailTextarea {
+      border-radius: 5px;
+      border: 1.5px solid $gray-200;
+      padding-inline: 15px;
+      height: 240px;
+      span {
+        color: $green-500;
+        font-size: 14px;
+      }
+
+      &:focus {
+        outline: none;
+        border: 2px solid $green-500;
+      }
+
+      &::placeholder {
+        color: #cbcbcb;
+      }
+    }
+    .errorInput {
+      border: 1px solid $red-500; // 當有錯誤時的紅色邊框顏色
+    }
+  }
+  .section03 {
+    padding-inline: 80px;
+    padding-block: 50px;
+    h4 {
+      color: $green-700;
+    }
+  }
+  .Btncon {
+    margin-right: 13% !important;
+  }
+}

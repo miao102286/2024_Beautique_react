@@ -1,0 +1,20 @@
+
+@media (max-width: 576px) {
+    .carousel {
+        display: none;
+    }
+}
+
+.carousel{
+    z-index: 0;
+    button{
+        width: 6px !important;
+        height: 6px !important;
+        border-radius: 50%;
+        margin-inline: 10px  !important;
+        margin-bottom: -10px  !important;
+        @media (max-width: 1300px) {
+           
+        }
+    }
+}

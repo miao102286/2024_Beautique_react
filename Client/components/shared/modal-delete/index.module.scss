@@ -1,0 +1,47 @@
+@import '@/styles/_variant.scss';
+.modal {
+  //   padding: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 448px;
+  & > div > div {
+    border-radius: 0px;
+  }
+  .modal-header {
+    border: none;
+    padding: 30px 30px 4px;
+    // font-size: 20px;
+    button {
+      &:active,
+      &:focus {
+        box-shadow: none;
+        border: none;
+      }
+    }
+  }
+  .modal-body {
+    border: none;
+    padding: 10px 30px 20px;
+    font-size: 16px;
+  }
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 30px 30px;
+    border: none;
+    //gap: 30px;
+    .btn:first-child {
+      width: 180px;
+      &:hover {
+        color: #fff;
+      }
+    }
+    .btn:last-child {
+      width: 180px;
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+}

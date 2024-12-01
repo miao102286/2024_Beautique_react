@@ -1,0 +1,39 @@
+@import '@/styles/_variant.scss';
+
+.selection-group {
+    label{
+        margin: 5px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    input:checked+.button {
+        background: $green-500;
+        color: #fff;
+    }
+
+    .button {
+        padding-inline: 20px;
+        padding-block: 5px;
+        border-radius: 25px;
+        background-color: $gray-100;
+        color: $green-500;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $gray-200;
+            color: #fff;
+        }
+    }
+}
+.re{
+    margin-inline: 5px;
+    width: 60px;
+    height: 40px;
+}

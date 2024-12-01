@@ -1,0 +1,182 @@
+@import '@/styles/_variant.scss';
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-title{
+  color:$green-800;
+}
+
+.info .form-control2 {
+  border-radius: 5px;
+  border-color: $gray-200;
+
+  &:focus {
+    border-color: $green-500;
+    box-shadow: 0 0 0 0.1rem $green-500;
+
+  }
+}
+
+.info .form-select2 {
+  border-radius: 5px;
+  box-shadow: 5px #e9ecef;
+  border: 1px solid $gray-200;
+
+  &:focus {
+    box-shadow: 0 0 0 0.1rem $green-500;
+  }
+}
+
+
+.btn {
+  border-radius: 5px;
+}
+
+.info {
+  padding-left: 20px;
+
+}
+
+.info span {
+  color: $green-500;
+
+}
+
+.info-phone {
+  padding-right: 50px;
+}
+
+.info-address {
+  padding-right: 40px;
+}
+
+
+.address-line {
+  border-bottom: 1px solid $green-500;
+
+}
+
+.address-area {
+  margin: 60px 0 30px 0;
+}
+
+.delete-account {
+  color: $red-500;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1.5px solid $red-500;
+}
+.avatar-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit-area {
+  margin-top: 70px;
+}
+
+.address-margin {
+  margin-bottom: 80px;
+}
+
+.info .error{
+  color: $red-500;
+}
+
+.explain{
+  color: $green-800;
+}
+
+.info label{
+  white-space: nowrap;
+}
+
+.submit-area{
+  display: flex;
+  justify-content: end ;
+  align-items: center ;
+}
+@media screen and (max-width: 800px) {
+  .info {
+    padding-left: 10px;
+  }
+  .form-container{
+    flex-direction: column !important;
+    align-items: center;
+
+  }
+  .form-content{
+    order: 2;
+  }
+
+  .submit-area{
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+  }
+  .avatar-area{
+    width: 100%;
+    order: 1;
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+    .avatar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+  }
+  
+}
+// @media screen and (max-width: 767px) {
+//   //  .avatar-area{
+//   //   align-items: start;
+//   // }
+//   .form-container{
+//     display: flex;
+//     align-items: start;
+//   }
+ 
+// }
+
+@media screen and (max-width: 600px) {
+  // .form-container{
+  //   flex-direction: column !important;
+  //   align-items: center;
+
+  // }
+  // .avatar-area{
+  //   order: 1;
+  //   // height: 300px;
+  //   .avatar{
+  //     // width: 255px;
+  //     height: 255px;
+
+  //   }
+
+  // }
+  // .form-content{
+  //   order: 2;
+  // }
+
+  // .submit-area{
+  //   display: flex;
+  //   justify-content: center ;
+  //   align-items: center ;
+  // }
+  .address-margin {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .cancel-btn{
+    width: 170px;
+  }
+
+}
+
+

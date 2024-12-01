@@ -1,0 +1,198 @@
+@import '@/styles/_variant.scss';
+
+// .body{
+//     width: 100%;
+//     height: 300px;
+//     background-color: #90957A;
+// }
+// header
+.header {
+  background-color: white;
+  border-bottom: 1px solid #00000033;
+  z-index: 9999;
+}
+.head-wrap {
+  padding: 16px 40px;
+  align-items: center;
+  @media (max-width: 768px) {
+    padding-inline: 15px;
+  }
+  input {
+    border-radius: 25px;
+    padding: 2px 16px;
+    border: 1.5px solid $green-500;
+    &:focus {
+      outline: none;
+    }
+  }
+  .logo {
+    img {
+      @media (max-width: 768px) {
+        width: 114px;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+  .header-icons {
+    & > a {
+      color: black;
+      &:hover {
+        color: $green-500;
+      }
+    }
+  }
+}
+
+//nav
+.nav {
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+  padding-block: 0 !important;
+
+  @media (max-width: 768px) {
+    position: absolute;
+    padding-block: 0;
+    background-color: #ffffffd2; //
+    width: 100%;
+    // height: 100%;
+
+    // overflow: hidden;
+  }
+}
+.ul {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  border: none;
+  @media (max-width: 992px) {
+    gap: 30px;
+  }
+  @media (max-width: 768px) {
+    gap: 0;
+    padding: 0 15px;
+  }
+  .li {
+    font-size: 16px;
+    color: #000;
+
+    @media (max-width: 768px) {
+      margin: 0.5rem;
+      &:last-child {
+        margin-bottom: 24px;
+      }
+    }
+
+    & > a {
+      color: #000;
+      &:hover {
+        color: #90957a;
+      }
+    }
+
+    //下拉選單框框
+    & > div {
+      padding-block: 0;
+      border: none;
+      background-color: #ffffffd2;
+      border-radius: 2px;
+      @media (max-width: 768px) {
+        background-color: #ffffff00;
+      }
+    }
+    // 品牌hover顏色
+    a + div a:active {
+      background-color: #fff;
+      color: #000;
+    }
+    //絕對定位
+    a + div {
+      top: 108%;
+      font-size: 0.875rem;
+    }
+    .dropdown-toggle::after {
+      display: none;
+    }
+    ::after {
+      display: none;
+    }
+    &:hover {
+      color: #90957a;
+    }
+    .active {
+      border-bottom: 2px #90957a solid;
+    }
+  }
+}
+.dropdown-content-wrapper {
+  display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  border-radius: 0px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  .dropdown-section {
+    div {
+      color: black;
+    }
+    // 彩妝hover顏色
+    a:active {
+      background-color: #000;
+    }
+    // padding: 20px 40px;
+    &:first-of-type {
+      color: black;
+    }
+  }
+}
+
+.offcanvas-header {
+  button {
+    &:hover,
+    &:visited,
+    &:focus {
+      box-shadow: none !important;
+      border: none !important;
+      outline: none !important;
+    }
+  }
+}
+.toggle-btn {
+  position: absolute;
+  top: -54px;
+  border: none !important;
+  width: auto;
+  height: auto;
+  color: transparent;
+  @media (max-width: 768px) {
+    top: -48px;
+  }
+
+  &:hover,
+  &:visited,
+  &:focus {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+.cart-icon {
+  position: relative;
+  .cart-number {
+    position: absolute;
+    font-size: 12px;
+    bottom: 8px;
+    left: 14px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $red-500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
