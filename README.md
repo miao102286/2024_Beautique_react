@@ -1,5 +1,9 @@
 # Beautique 
 資展iSpan 第57期 前端工程師 7人團隊專題
+
+## 影片連結
+[![影片標題](https://raw.githubusercontent.com/miao102286/2024_Beautique_react/main/video_pic.png)](https://www.youtube.com/watch?v=q9XTz_5lejw)
+
 ## 網站介紹
 Beautique 精選五大美妝專櫃品牌，讓用戶能夠以實惠價格購買心儀的彩妝品。同時推出專業彩妝課程，讓用戶在購買彩妝產品的同時，也能掌握美妝技巧。
 
@@ -11,9 +15,6 @@ Beautique 精選五大美妝專櫃品牌，讓用戶能夠以實惠價格購買�
 後端：Node.js、express.js、php
 資料庫、版本控制：Mysql、Git、GitHub
 設計：Figma
-
-## [![影片標題](https://raw.githubusercontent.com/miao102286/2024_Beautique_react/main/video_pic.png)](https://www.youtube.com/watch?v=影片ID)
-
 
 ## 網站功能介紹
 1. 會員中心 (温采妮) : 
