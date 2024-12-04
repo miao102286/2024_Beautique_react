@@ -12,6 +12,9 @@ Beautique 精選五大美妝專櫃品牌，讓用戶能夠以實惠價格購買�
 資料庫、版本控制：Mysql、Git、GitHub
 設計：Figma
 
+## [![影片標題](https://raw.githubusercontent.com/miao102286/2024_Beautique_react/main/video_pic.png)](https://www.youtube.com/watch?v=影片ID)
+
+
 ## 網站功能介紹
 1. 會員中心 (温采妮) : 
 - 註冊、登入、登出、修改資料。
